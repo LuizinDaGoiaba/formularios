@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios formularios</title>
+</head>
+<body>
+    <a href="https://github.com/LuizinDaGoiaba/formularios">Link para o repositório do GitHub</a>
+    <br><br>
+    <center>
+    <form>
+        <fieldset style="width: 50%">
+        <h1>Formulário de inscrição de evento</h1>
+        <br><br>
+        <fieldset>
+        <table style="widht:70% margin: 0 auto">
+            <tr>
+                <td style="text-align: right"> nome completo: </td>
+                <td> 
+                    <input type="text" name="nome">
+                </td>
+            </tr>
+    
+            <tr>
+                <td style="text-align: right"> email: </td>
+                <td> 
+                    <input type="email" name="email"
+                            placeholder="ex: myname@example.com">
+                </td>
+            </tr>
+    
+            <tr>
+                <td style="text-align: right"> Sexo: </td>
+                <td> 
+                    <input type="radio" name="sexo" value="masculino">masculino</input>
+                    &nbsp;&nbsp;
+                    <input type="radio" name="sexo" value="feminino">feminino</input>
+                    </td>
+            </tr>
+
+            <tr>
+                <td style="text-align: right"> Cargo: </td>
+                <td> 
+                    <input type="text" name="cargo">
+                </td>
+            </tr>
+            
+            <tr>
+                <td style="text-align: right"> Nascimento: </td>
+                <td>
+                <input type="date" name="dtnasc">
+                </td>
+            </tr>
+
+            <tr>
+                <td style="text-align: right"> telefone: </td>
+                <td> 
+                    <input type="tel" name="telefone">
+                </td>
+            </tr>
+            </table>
+            </fieldset>
+        </form>
+        <h2 style="text-align: left"> Informações da instituição</h2>
+            <p style="text-align: left">preencha os campos abaixo com as informações
+                                        da empresa em que trabalha</p>
+        <form>
+            <fieldset>
+                <table>
+            <tr>
+                <td style="text-align: right"> Empresa: </td>
+                <td> 
+                    <input type="text" name="empresa"> &nbsp;&nbsp;&nbsp;
+                </td>
+            </tr>
+
+            <tr>
+                <td style="text-align: right"> Endereço: </td>
+                <td> 
+                    <input type="text" name="endereco"> &nbsp;&nbsp;&nbsp;
+                </td>
+            </tr>
+
+            <tr>
+                <td style="text-align: right"> Cidade: </td>
+                <td> 
+                    <input type="text" name="endereco"> &nbsp;&nbsp;&nbsp;
+                </td>
+            </tr>
+
+            <tr>
+                <td style="text-align: right"> Estado: </td>
+                <td> 
+                    <select name="uf">
+                        <option selected disabled>Selecione...</option>
+                        <option>São Paulo</option>
+                        <option>Rio de Janeiro</option>
+                        <option>Minas Gerais</option>
+                        <option>Rondônia</option>
+                        <option>Outro</option>
+                    </select>
+                </td>
+
+                <tr>
+                    <td style="text-align: right"> Quant. Funcionários: </td>
+                    <td> 
+                        <input type="number" name="funcionarios"
+                                step="1.0" min="1" max="1000"> &nbsp;&nbsp;&nbsp;
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: right"> Observações: </td>
+                    <td> 
+                        <input type="text" style= "height: 100px"> &nbsp;&nbsp;&nbsp;
+                    </td>
+                </tr>
+            </table>
+            </fieldset>
+    </form>
+        <fieldset>
+            <table>
+                <label for="nsup">Recibo</label>
+                <input type="checkbox" id="nsup" name="nsup" style="text-align: right">emitir em nome da instituição
+                <br><br>
+                <input type="submit" value="Fazer inscrição">
+            </table>
+        </fieldset>
+    </fieldset>
+    </form>
+    </center>
+</body>
+</html>
